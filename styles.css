@@ -34,16 +34,16 @@ body {
   background: var(--beige);
   backdrop-filter: blur(14px);
   border-bottom: none;
-  padding: 0;
+  padding: 0.3rem 0;
 }
 
 .header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.6rem;
-  padding: 0.2rem 0;
-  min-height: 50px;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  min-height: 60px;
 }
 
 .brand {
@@ -60,8 +60,7 @@ body {
   font-size: 0.9rem;
   text-align: center;
   white-space: nowrap;
-  margin: 0 auto;
-  flex: 1;
+  margin-left: 1rem;
 }
 
 .logo-img {
@@ -367,7 +366,6 @@ body {
   .menu-toggle {
     display: block;
   }
-}
 
   .hero {
     min-height: 50vh;
@@ -411,15 +409,13 @@ body {
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
   transition: all 0.3s ease;
-  z-index: 9999;
-  animation: whatsapp-pulse 2s infinite;
+  z-index: 1000;
 }
 
 .whatsapp-btn:hover {
   background: #128c7e;
   transform: scale(1.1);
   box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
-  animation-play-state: paused;
 }
 
 .whatsapp-btn svg {
@@ -427,29 +423,32 @@ body {
   height: 28px;
 }
 
-@keyframes whatsapp-pulse {
-  0% {
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-  }
-  50% {
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4), 0 0 0 8px rgba(37, 211, 102, 0.1);
-  }
-  100% {
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-  }
+/* Instagram Button */
+.instagram-btn {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(193, 53, 132, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .whatsapp-btn {
-    bottom: 15px;
-    right: 15px;
-    width: 55px;
-    height: 55px;
-  }
+.instagram-btn:hover {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(193, 53, 132, 0.6);
+}
 
-  .whatsapp-btn svg {
-    width: 24px;
-    height: 24px;
-  }
+.instagram-btn svg {
+  width: 28px;
+  height: 28px;
 }
