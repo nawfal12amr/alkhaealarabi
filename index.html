@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الخط العربي | مكتبة الثقافة العربية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrapper">
+      <a href="#" class="brand">
+        <img src="logo.png" class="logo-img" alt="لوغو الخط العربي" />
+      </a>
+      <div class="brand-slogan">العلم نور، والقراءة طريقنا</div>
+      <nav class="main-nav">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من نحن</a>
+        <a href="#books">الكتب</a>
+        <a href="#featured">الموصى بها</a>
+        <a href="#contact">اتصل بنا</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="قائمة الهاتف">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>مرحبا بكم في مكتبة <span>الخط العربي</span></h1>
+        <p>وجهتك الأولى للكتب الشرعية الأصيلة في القرآن والسنة والفقه والتربية الدينية.</p>
+        <div class="hero-actions">
+          <a href="#books" class="btn btn-primary">تصفح الكتب</a>
+          <a href="#contact" class="btn btn-secondary">تواصل معنا</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header">
+          <h2>من نحن</h2>
+          <p>نشر العلم الشرعي وحب القراءة الدينية هدفنا الرئيسي.</p>
+        </div>
+        <p>في مكتبة الخط العربي، نركز على الكتب الشرعية الموثوقة: كتب تفسير، أحاديث، سيرة، فقه، عقيدة، تربية إسلامية، وتربية الأبناء على قيم القرآن والسنة. نحن نسعى لتوفير مصادر علمية مشروعة للجيل الجديد.</p>
+      </div>
+    </section>
+
+    <section id="books" class="section categories">
+      <div class="container">
+        <div class="section-header">
+          <h2>فئات الكتب</h2>
+          <p>اختَر الفئة التي تريدها من مجموعتنا.</p>
+        </div>
+        <div class="grid cards">
+          <article class="card">
+            <h3>علوم القرآن</h3>
+            <p>تفسير، أسباب النزول، وتجليات معاني الآيات.</p>
+          </article>
+          <article class="card">
+            <h3>الحديث والسيرة</h3>
+            <p>كتب الأحاديث الصحيحة وشرحها، وسيرة النبي ﷺ.</p>
+          </article>
+          <article class="card">
+            <h3>الفقه والعقيدة</h3>
+            <p>كتب فقهية ومناهج عقائد أهل السنة والجماعة.</p>
+          </article>
+          <article class="card">
+            <h3>تربية إسلامية</h3>
+            <p>منهجية تربية الأولاد على القيم والأخلاق.</p>
+          </article>
+          <article class="card">
+            <h3>كتب الأطفال الشرعية</h3>
+            <p>قصص دينية مبسطة علمية للأطفال.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="section featured">
+      <div class="container">
+        <div class="section-header">
+          <h2>الكتب الموصى بها</h2>
+          <p>مجموعة مختارة بعناية.</p>
+        </div>
+
+        <div class="search-wrapper">
+          <input id="bookSearch" type="search" placeholder="ابحث عن كتاب بسهولة..." aria-label="ابحث عن كتاب" />
+        </div>
+
+        <div class="grid cards" id="booksGrid">
+          <article class="book-card" data-title="البداية والنهاية">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=700&q=80" alt="البداية والنهاية" loading="lazy" />
+            <div class="book-details">
+              <h3>البداية والنهاية</h3>
+              <p>ابن كثير</p>
+              <p>200 ر.س</p>
+              <p class="desc">كتب تاريخية تراثية مبنية على منهجية أهل السنة.</p>
+            </div>
+          </article>
+          <article class="book-card" data-title="صحيح البخاري">
+            <img src="https://images.unsplash.com/photo-1589395595558-f8083c3b9b92?auto=format&fit=crop&w=700&q=80" alt="صحيح البخاري" loading="lazy" />
+            <div class="book-details">
+              <h3>صحيح البخاري</h3>
+              <p>الإمام البخاري</p>
+              <p>210 ر.س</p>
+              <p class="desc">أشهر كتب الحديث وأصح الكتب بعد القرآن الكريم.</p>
+            </div>
+          </article>
+          <article class="book-card" data-title="رياض الصالحين">
+            <img src="https://images.unsplash.com/photo-1534751516642-a1af1ef6f86f?auto=format&fit=crop&w=700&q=80" alt="رياض الصالحين" loading="lazy" />
+            <div class="book-details">
+              <h3>رياض الصالحين</h3>
+              <p>الإمام النووي</p>
+              <p>95 ر.س</p>
+              <p class="desc">مختارات من الحديث والسيرة لتربية النفوس على الإيمان.</p>
+            </div>
+          </article>
+          <article class="book-card" data-title="فقه العبادات">
+            <img src="https://images.unsplash.com/photo-1588065204649-5ca759a40301?auto=format&fit=crop&w=700&q=80" alt="فقه العبادات" loading="lazy" />
+            <div class="book-details">
+              <h3>فقه العبادات</h3>
+              <p>محمود الحسن</p>
+              <p>80 ر.س</p>
+              <p class="desc">كتاب يتناول أحكام العبادات بشكل مبسّط وواضح.</p>
+            </div>
+          </article>
+          <article class="book-card" data-title="قصص الصحابة للأطفال">
+            <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=700&q=80" alt="قصص الصحابة" loading="lazy" />
+            <div class="book-details">
+              <h3>قصص الصحابة للأطفال</h3>
+              <p>دار المنارة</p>
+              <p>70 ر.س</p>
+              <p class="desc">قصص تربوية للأطفال من حياة الصحابة بأسلوب جذاب.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="section order">
+      <div class="container">
+        <div class="section-header">
+          <h2>إمكانية الطلب أو الشراء</h2>
+          <p>اطلب الكتاب الذي تريده وسنسعد بخدمتك.</p>
+        </div>
+        <form id="orderForm" class="form-grid" aria-label="نموذج طلب كتاب">
+          <label>الاسم الكامل<input type="text" name="name" required placeholder="اسمك"/></label>
+          <label>الجوال<input type="tel" name="phone" required placeholder="رقم الهاتف"/></label>
+          <label>البريد الإلكتروني<input type="email" name="email" required placeholder="بريدك الإلكتروني"/></label>
+          <label>الكتاب المطلوب<input type="text" name="book" required placeholder="عنوان الكتاب"/></label>
+          <label>ملاحظات<textarea name="notes" rows="4" placeholder="أي ملاحظات إضافية"></textarea></label>
+          <button type="submit" class="btn btn-primary">إرسال الطلب</button>
+        </form>
+        <p id="orderMessage" class="info-message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>اتصل بنا</h2>
+          <p>نحن هنا للمساعدة.</p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-Card">
+            <h3>الهاتف</h3>
+            <p>0638849098</p>
+          </article>
+          <article class="contact-Card">
+            <h3>البريد الإلكتروني</h3>
+            <p>info@alkhattalarabi.com</p>
+          </article>
+          <article class="contact-Card">
+            <h3>الموقع</h3>
+            <p>المغرب - فاس</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 مكتبة الخط العربي. جميع الحقوق محفوظة.</p>
+      <p>تصميم عصري بنبرة ثقافية عربية.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/212638849098" class="whatsapp-btn" target="_blank" title="تواصل معنا" aria-label="تواصل عبر واتساب">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
